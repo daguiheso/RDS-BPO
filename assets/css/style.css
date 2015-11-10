@@ -6886,6 +6886,7 @@ body {
   width: 440px;
   text-align: center;
   position: relative;
+  margin: 0 auto;
 }
 .Register .Circle-wrapper {
   position: absolute;
@@ -6963,6 +6964,50 @@ body {
 }
 .icon-rds-logo:before {
   content: "\e902";
+}
+@media screen and (max-width: 1200px) {
+  .Img-wrapper {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .Medium {
+    width: 100%;
+  }
+  .Register {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 866px) {
+  .Img-wrapper {
+    padding: 50px 46px;
+  }
+}
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .Info-text {
+    border: 0;
+    margin-top: 20px;
+  }
+  .u-align-right {
+    text-align: center;
+  }
+  .Register .Circle {
+    height: 340px;
+    width: 340px;
+  }
+}
+@media screen and (max-width: 685px) {
+  .Img-wrapper {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
