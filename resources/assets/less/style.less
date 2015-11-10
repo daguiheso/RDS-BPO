@@ -1,3 +1,188 @@
-.Amigos {
-	background-color: red;
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "bootstrap.less";
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
+.Header {
+	min-height: 84px;
+	background: #3b3b3b;
+	color: #fff;
+	span {
+	    padding: 0 30px;
+	    line-height: 84px;
+	    font-size: 3em;
+	}
+}
+.Img {
+	height: 625px;
+	background-image: url(../images/bg-image.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	hr {
+		margin-top: 10px;
+	    margin-bottom: 10px;
+	    border-top: 1px solid #fff;
+	}
+	&-wrapper {
+		width: 60%;
+		border: 1px solid #fff;
+		background: #000;
+		opacity: .5;
+		padding: 50px 80px;
+		position: absolute;
+		left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	}
+	&-title {
+		font-family: 'Oswald', sans-serif;
+		font-size: 5.62em;
+		margin-bottom: 0;
+	}
+	&-text {
+		font-size: 1.50em;
+		width: 89%;
+	    margin: 0 auto;
+	}
+}
+
+.u-align-right {
+	text-align: right;
+}
+.u-relative {
+	position: relative;
+}
+.u-absolute {
+	position: absolute;
+}
+.Info {
+	background-color: #a61e28;
+	padding: 44px 0;
+	color: #fff;
+	&-title1 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 6.56em;	
+		margin: 0;	
+	    padding-right: 30px;
+	}
+	&-title2 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 3.12em;
+		margin: 0;
+	    padding-right: 30px;
+	}
+	&-text {
+		font-size: 1.25em;
+		padding-left: 30px;
+		border-left: 3px solid #fff;
+		width: 90%;
+	}
+}
+.Register {
+	// height: 636px;
+    padding: 106px 0;
+	.Circle {
+		background: #f2f2f2;
+	    border-radius: 100%;
+	    height: 440px;
+	    width: 440px;
+	    text-align: center;
+ 		position: relative;
+     	&-wrapper {
+	    	position: absolute;
+	        top: 50%;
+	        transform: translate(0, -50%);
+	        -webkit-transform: translate(0, -50%);
+     	}
+	    &-icon {
+	    	font-size: 5em;
+	    }
+	    &-title {
+			font-family: 'Oswald', sans-serif;
+	    	font-size: 3em;
+	    	color: #a61e28;
+	    }
+	    &-text {
+			font-size: 1.25em;
+			color: #3b3b3b;
+			width: 90%;
+		    margin: 0 auto;
+	    }
+	}
+	form {
+		label {
+			font-size: 1em;
+			color: #3b3b3b;
+			font-weight: normal;
+		}
+		button {
+			border-radius: 0;
+			background-color: #a61e28;
+			color: #fff;
+			padding: 8px 27px;
+			margin-left: 16px;
+			margin-top: 10px;
+			&:hover {
+				color: #fff;
+			}
+		}
+		input {
+			border-radius: 0;
+		}
+	}
+}
+.Footer {
+	color: #fff;
+	height: 63px;
+	background: #3b3b3b;
+	line-height: 63px;
+	font-size: .88em;
+
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?oe2myy');
+	src:url('../fonts/icomoon.eot?oe2myy#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?oe2myy') format('truetype'),
+		url('../fonts/icomoon.woff?oe2myy') format('woff'),
+		url('../fonts/icomoon.svg?oe2myy#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nube-logo:before {
+	content: "\e900";
+}
+.icon-nube-roja:before {
+	content: "\e901";
+	color: #af292e ;
+}
+.icon-rds-logo:before {
+	content: "\e902";
+}
+

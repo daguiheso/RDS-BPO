@@ -7,7 +7,94 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<h1 class="Amigos">Hola amigos</h1>
+	<header class="Header">
+		<div class="container">
+			<span class="icon-rds-logo"></span>
+		</div>
+	</header>
+	<section class="Img">
+		<div class="Img-wrapper">
+			<h1 class="Img-title">SERVICIOS BPO</h1>
+			<hr>
+			<p class="Img-text">
+				En RDS, ofrecemos los mejores servicios y personal para impulsar la eficiencia y la transparencia de los procesos de su idea o negocio.
+			</p>
+		</div>
+	</section>
+	<section class="Info">
+		<div class="container">
+			<div class="col-sm-6 u-align-right">
+				<h2 class="Info-title1">AHORRE</h2>
+				<h3 class="Info-title2">TIEMPO Y DINERO</h3>
+			</div>
+			<div class="col-sm-6">
+				<p class="Info-text">Contamos con un modelo diferencial para la externalización de procesos que nos permite enfocarnos en sus ventajas competitivas, flexibilizar su gestión, obtener capacidades adicionales, minimizar risegos de manera eficiente.</p>
+			</div>
+		</div>
+	</section>
+	<section class="Register">
+		<div class="container">
+			<div class="col-sm-6 col-xs-12">
+				<div class="Circle">
+					<div class="Circle-wrapper">
+						<span class="Circle-icon icon-nube-roja"></span>
+						<h4 class="Circle-title">¡COMIENCE AHORA!</h4>
+						<p class="Circle-text">Queremos ser parte del proceso de crecimiento de su empresa, diligencie los siguientes datos y uno de nuestros consultores lo contactará.</p>
+						<span class="Circle-note">Campos obligatorios*</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<form  id="formRegister" name="formLanding">
+				    <div class="form-group col-sm-10 col-xs-12">
+				        <label>Nombre*</label>
+				        <input type="text" ng-model="dates.name" class="form-control" required>
+				    </div>
+				    <div class="form-group col-sm-10 col-xs-12">
+				        <label>Email*</label>
+				        <input type="email" ng-model="dates.email" class="form-control" required>
+				    </div>
+				    <div class="form-group col-sm-10 col-xs-12">
+				        <label>Teléfono de contacto*</label>
+				        <input type="text" ng-model="dates.phone_number" class="form-control" required>
+				    </div>
+				    <div class="form-group col-sm-10 col-xs-12">
+				        <label>País*</label>
+				        <select type="text" class="form-control sinBordes" required>
+				            <option value="Argentina">Argentina</option>
+				            <option value="Bolivia">Bolivia</option>
+				            <option value="Chile">Chile</option>
+				            <option value="Colombia">Colombia</option>
+				    	    <option value="Costa Rica">Costa Rica</option>
+				    	    <option value="Cuba">Cuba</option>
+				    	    <option value="Ecuador">Ecuador</option>
+				    	    <option value="El Salvador">El Salvador</option>
+				    	    <option value="España">España</option>
+				    	    <option value="Guatemala">Guatemala</option>
+				    	    <option value="Honduras">Honduras</option>
+				    	    <option value="México">México</option>
+				    	    <option value="Nicaragua">Nicaragua</option>
+				    	    <option value="Panamá">Panamá</option>
+				    	    <option value="Paraguay">Paraguay</option>
+				    	    <option value="Perú">Perú</option>
+				    	    <option value="Puerto Rico">Puerto Rico</option>
+				    	    <option value="República Dominicana">República Dominicana</option>
+				    	    <option value="Uruguay">Uruguay</option>
+				    	    <option value="Venezuela">Venezuela</option>
+				    	    <option value="Otro país">Otro país</option>
+				        </select>
+				    </div>
+				    <button type="submit" class="btn">ENVIAR</button>
+				</form>
+			</div>
+
+		</div>
+	</section>
+	<footer class="Footer">
+		<div class="container">
+		    @ 2015 Red Design Systems
+		</div>
+	</footer>
 
     <script src="assets/js/all.js"></script>
 </body>
