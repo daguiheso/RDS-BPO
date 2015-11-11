@@ -1,6 +1,6 @@
 /*form to submit form*/
 angular.module('formulario', [])
-    .controller('ExampleController', ['$scope', function($scope) {
+    .controller('ExampleController', ['$scope', '$http', function($scope, $http) {
       $scope.list = [];
 	  $scope.name = '';
 	  $scope.email = '';
