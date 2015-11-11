@@ -1,23 +1,27 @@
 <?php
 //
 require_once 'vendor/autoload.php';
-header('Content-Type: application/json');
-echo json_encode(['estado' => 'enviado']); 
 
-die;
+
+
 $nombre =  $_POST['nombre'];
-$empresa = $_POST['empresa'];
+//$empresa = $_POST['empresa'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
-$servicios = $_POST['servicios'];
+$pais = $_POST['pais'];
 $ok = 0;
 $ip = $_SERVER['REMOTE_ADDR'];
+$arr = array ('status'=>2,'nombre'=>$nombre, 'email' => $email, 'telefono' => $telefono, 'pais' => $pais );
+header('Content-Type: application/json');
+echo json_encode($arr); 
+
+die;
 //mysql
 //$con=mysqli_connect("localhost","landing","landing","landing");
 // Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+//if (mysqli_connect_errno()) {
+//  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+//}
 //
 
 //
@@ -29,6 +33,8 @@ $ok = 1;
 $arr = array ('status'=>2,'nombre'=>$nombre, 'empresa' => $empresa, 'email' => $email, 'telefono' => $telefono, 'servicios' => $servicios );
 }
 
+
+die;
 // echo json con respuesta de valores enviados.
 if($ok == 1){
  //guardar en base de datos y enviar correo electronico
