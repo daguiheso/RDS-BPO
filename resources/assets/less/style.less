@@ -147,7 +147,7 @@ html, body {
 	background: #3b3b3b;
 	line-height: 63px;
 	font-size: .88em;
-
+	overflow: hidden;
 }
 
 @font-face {
@@ -200,6 +200,9 @@ html, body {
 	}
 	.Register {
 		padding: 60px 0;
+		form {
+		    margin-top: 40px;
+		}
 	}
 }
 @media screen and (max-width: 866px) {
@@ -230,5 +233,84 @@ html, body {
 @media screen and (max-width: 685px) {
 	.Img-wrapper {
 	    width: 90%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.Header {
+		min-height: 40px;
+		span {
+			padding: 0;
+			line-height: 40px;
+			font-size: 2em;
+		}
+	}
+	.Img {
+		&-wrapper {
+			padding: 40px 25px;
+		}
+		&-title {
+		    font-size: 5em;
+		}
+		&-text {
+		    font-size: 1.40em;
+		}
+	}
+}
+@media screen and (max-width: 416px) {
+	.Img {
+		height: 530px;
+		font-size: 11px;
+		&-title {
+			font-size: 4em;
+		}
+	}
+	.Info {
+		&-text {
+		    padding-left: 0;
+		    margin: 20px auto;
+		}
+	}
+	.Register  {
+		.Circle {
+			height: 300px;
+		    width: 300px;
+			&-icon {
+			    font-size: 4em;
+			}
+			&-title {
+				font-size: 2.5em;
+			}
+			&-text {
+			    width: 80%;
+			}
+		}
+	}
+	.Footer {
+	    height: 50px;
+	    line-height: 50px;
+	}
+}
+@media screen and (max-width: 370px) {
+	html, body {
+		font-size: 10px;
+	}
+	.Register .Circle {
+	    height: 250px;
+	    width: 250px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.Register .Circle {
+	    height: 235px;
+	    width: 238px;
+	}
+	.Img {
+		height: 463px;
+		&-title {
+		    font-size: 3.5em;
+		}
+		&-wrapper {
+		    padding: 30px 18px;
+		}
 	}
 }
