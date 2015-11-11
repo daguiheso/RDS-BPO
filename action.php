@@ -1,8 +1,10 @@
 <?php
 //
 require_once 'vendor/autoload.php';
+header('Content-Type: application/json');
+echo json_encode(['estado' => 'enviado']); 
 
-
+die;
 $nombre =  $_POST['nombre'];
 $empresa = $_POST['empresa'];
 $email = $_POST['email'];
