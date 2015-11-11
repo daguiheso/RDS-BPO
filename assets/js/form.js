@@ -18,7 +18,7 @@ angular.module('formulario', [])
 			$scope.list.push(this.pais);
 			console.log(this.pais);
           $scope.text = '';
-		  $http.post('/someUrl',  { test: 'test' }).then(function successCallback(response) {
+		  $http.post('/action.php',  { test: 'test' }).then(function successCallback(response) {
     // this callback will be called asynchronously
     // when the response is available
 	console.log(response);
