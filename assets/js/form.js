@@ -27,6 +27,7 @@ angular.module('formulario', [])
 	console.log(response);
   }, function errorCallback(response) {
     // called asynchronously if an error occurs
+	console.log("error al enviar");
     // or server returns response with an error status.
   });
 		  
