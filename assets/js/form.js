@@ -16,6 +16,7 @@ angular.module('formulario', [])
 		    $scope.list.push(this.email);
 			$scope.list.push(this.phone);
 			$scope.list.push(this.pais);
+			console.log(this.pais);
           $scope.text = '';
         }
       };
