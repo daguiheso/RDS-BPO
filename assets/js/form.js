@@ -18,14 +18,14 @@ angular.module('formulario', [])
 			$scope.list.push(this.pais);
 			console.log(this.pais);
           $scope.text = '';
-		 var data  = [
+			var data  = [
             'nombre': this.name,
 			'email': this.email,
 			'telefono': this.phone,
 			'pais': this.pais];
 			console.log(data);
 			console.log("Antes de llamar submit");
-		  $http.post('/action.php',  data ).then(function successCallback(response) {
+		  $http.post('/action.php', this.data ).then(function successCallback(response) {
     // this callback will be called asynchronously
     // when the response is available
 	console.log(response);
