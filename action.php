@@ -16,7 +16,7 @@ $contenido = json_decode(file_get_contents("php://input"));
 //$pais = $_POST['pais'];
 $ok = 0;
 $ip = $_SERVER['REMOTE_ADDR'];
-$arr = array ('status'=>2,'nombre'=>$nombre, 'email' => $email, 'telefono' => $telefono, 'pais' => $pais, 'ip' =>$ip );
+$arr = array ('status'=>2,'nombre'=>$contenido->name, 'email' => $contenido->email, 'telefono' => $contenido->phone, 'pais' => $contenido->pais, 'ip' =>$ip );
 header('Content-Type: application/json');
 echo json_encode($arr); 
 
