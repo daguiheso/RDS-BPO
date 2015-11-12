@@ -18,13 +18,14 @@ angular.module('formulario', [])
 			$scope.list.push(this.pais);
 			console.log(this.pais);
             $scope.text = '';
-			debugger
+			// debugger
 			//console.log(data);
 			//console.log("Antes de llamar submit");
 			var req = {
 				method: 'POST',
 				url: 'http://landing.reddesignsystems.com/action.php',
-				data: $scope.list				
+				data: { test: this.name },
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}			
 			}
 			$http(req)
 				.then(function successCallback(response) {
