@@ -30,7 +30,7 @@ angular.module('formulario', [])
 			}
 			$http(req)
 				.then(function successCallback(response) {
-					debugger
+					//debugger
 	    			// this callback will be called asynchronously
 	    			// when the response is available
 					console.log(response);
