@@ -3,7 +3,7 @@
 require_once 'vendor/autoload.php';
 
 $contenido = json_decode(file_get_contents("php://input"));
-echo $contenido->test;
+echo $contenido->name;
 //var_dump($contenido);
 die;
 

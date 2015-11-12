@@ -33,7 +33,7 @@ angular.module('formulario', [])
 					//debugger
 	    			// this callback will be called asynchronously
 	    			// when the response is available
-					//console.log(response);
+					console.log(response);
  				 }, function errorCallback(response) {
     				// called asynchronously if an error occurs
 					console.log("error al enviar");
