@@ -6825,7 +6825,7 @@ body {
   width: 60%;
   border: 1px solid #fff;
   background: #000;
-  opacity: .5;
+  opacity: .7;
   padding: 50px 80px;
   position: absolute;
   left: 50%;
@@ -6843,6 +6843,7 @@ body {
   font-size: 1.50em;
   width: 89%;
   margin: 0 auto;
+  margin-bottom: .3em;
 }
 .u-align-right {
   text-align: right;
@@ -6908,6 +6909,7 @@ body {
   color: #3b3b3b;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: .3em;
 }
 .Register form label {
   font-size: 1em;
@@ -7049,6 +7051,7 @@ body {
   .Info-text {
     padding-left: 0;
     margin: 20px auto;
+    text-align: center;
   }
   .Register .Circle {
     height: 300px;
@@ -7068,7 +7071,7 @@ body {
     line-height: 50px;
   }
   .Thanks {
-    min-height: 100vh;
+    min-height: 86vh;
   }
 }
 @media screen and (max-width: 370px) {
