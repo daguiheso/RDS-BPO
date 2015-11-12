@@ -26,7 +26,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 
 //
 if($nombre == "" || $email == "" || $servicios == ""){
-
+$arr = array ('status'=>2,'nombre'=>$contenido->name, 'email' => $contenido->email, 'telefono' => $contenido->phone, 'pais' => $contenido->pais, 'ip' =>$ip );
 $ok = 1;
 }else{
 $ok = 1;
