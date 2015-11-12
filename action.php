@@ -7,13 +7,13 @@ $contenido = json_decode(file_get_contents("php://input"));
 
 
 //var_dump($contenido);
-die;
+//die;
 
-$nombre =  $_POST['nombre'];
+//$nombre =  $_POST['nombre'];
 //$empresa = $_POST['empresa'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$pais = $_POST['pais'];
+//$email = $_POST['email'];
+//$telefono = $_POST['telefono'];
+//$pais = $_POST['pais'];
 $ok = 0;
 $ip = $_SERVER['REMOTE_ADDR'];
 $arr = array ('status'=>2,'nombre'=>$nombre, 'email' => $email, 'telefono' => $telefono, 'pais' => $pais, 'ip' =>$ip );
