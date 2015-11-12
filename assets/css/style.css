@@ -7067,6 +7067,9 @@ body {
     height: 50px;
     line-height: 50px;
   }
+  .Thanks {
+    min-height: 100vh;
+  }
 }
 @media screen and (max-width: 370px) {
   html,
@@ -7092,6 +7095,15 @@ body {
   .Img-wrapper {
     padding: 30px 18px;
   }
+}
+/*
+
+	THANKS
+
+*/
+.icon-thanks {
+  font-size: 2.5em;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 /*form to submit form*/
 angular.module('formulario', [])
-    .controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+    .controller('ExampleController', ['$scope', '$http', '$window', function($scope, $http, $window) {
       $scope.list = [];
 	  $scope.name = '';
 	  $scope.email = '';
@@ -17,6 +17,7 @@ angular.module('formulario', [])
 			$http(req)
 				.then(function successCallback(response) {					
 					console.log(response);
+					$window.location.href = "http://landing.reddesignsystems.com/thanks.html";
 					alert('Gracias por la información, lo contactaremos muy pronto');
  				 }, function errorCallback(response) {    				
 					alert("error al enviar, intente de nuevo.");
