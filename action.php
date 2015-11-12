@@ -6,7 +6,7 @@ $contenido = json_decode(file_get_contents("php://input"));
 //echo $contenido->name;
 
 header('Content-Type: application/json');
-$arr = array ('status'=>2,'nombre'=>$contenido->name);
+$arr = array ('status'=>2,'nombre'=>$contenido->email);
 echo json_encode($arr); 
 //var_dump($contenido);
 die;
