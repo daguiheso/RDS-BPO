@@ -5,9 +5,7 @@ require_once 'vendor/autoload.php';
 $contenido = json_decode(file_get_contents("php://input"));
 //echo $contenido->name;
 
-header('Content-Type: application/json');
-$arr = array ('status'=>2,'nombre'=>$contenido->name, 'email' => $contenido->email, 'telefono' => $contenido->phone, 'pais' => $contenido->pais );
-echo json_encode($arr); 
+
 //var_dump($contenido);
 die;
 
@@ -18,7 +16,7 @@ $telefono = $_POST['telefono'];
 $pais = $_POST['pais'];
 $ok = 0;
 $ip = $_SERVER['REMOTE_ADDR'];
-$arr = array ('status'=>2,'nombre'=>$nombre, 'email' => $email, 'telefono' => $telefono, 'pais' => $pais );
+$arr = array ('status'=>2,'nombre'=>$nombre, 'email' => $email, 'telefono' => $telefono, 'pais' => $pais, 'ip' =>$ip );
 header('Content-Type: application/json');
 echo json_encode($arr); 
 
