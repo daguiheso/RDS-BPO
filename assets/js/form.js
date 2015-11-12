@@ -24,7 +24,7 @@ angular.module('formulario', [])
 			var req = {
 				method: 'POST',
 				url: 'http://landing.reddesignsystems.com/action.php',
-				data: { test: this.name },
+				data: { test: this.name, email: this.email },
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}			
 			}
 			$http(req)
