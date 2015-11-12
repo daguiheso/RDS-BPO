@@ -3,7 +3,11 @@
 require_once 'vendor/autoload.php';
 
 $contenido = json_decode(file_get_contents("php://input"));
-echo $contenido->name;
+//echo $contenido->name;
+
+header('Content-Type: application/json');
+$arr = array ('status'=>2,'nombre'=>$contenido->name);
+echo json_encode($arr); 
 //var_dump($contenido);
 die;
 
