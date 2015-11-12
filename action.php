@@ -26,7 +26,7 @@ $mail->FromName = 'Soporte landing';
 $mail->addAddress('flb@reddesignsystems.com', 'Felipe lizcano');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
-$mail->addCC('soporte@reddesignsystems.com');
+//$mail->addCC('soporte@reddesignsystems.com');
 $mail->addCC('landing@reddesignsystems.com');
 $mail->addBCC('lmedina@reddesignsystems.com');
 //$mail->addBCC('flb@reddesignsystems.com');
