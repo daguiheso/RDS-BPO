@@ -16,11 +16,6 @@ $contenido = json_decode(file_get_contents("php://input"));
 //$pais = $_POST['pais'];
 $ok = 0;
 $ip = $_SERVER['REMOTE_ADDR'];
-$arr = array ('status'=>2,'nombre'=>$contenido->name, 'email' => $contenido->email, 'telefono' => $contenido->phone, 'pais' => $contenido->pais, 'ip' =>$ip );
-header('Content-Type: application/json');
-echo json_encode($arr); 
-
-die;
 //mysql
 //$con=mysqli_connect("localhost","landing","landing","landing");
 // Check connection
@@ -31,15 +26,13 @@ die;
 
 //
 if($nombre == "" || $email == "" || $servicios == ""){
- $arr = array ('status'=>1,'error'=>"Por favor diligencie los campos obligatorios"); 
+
 
 }else{
 $ok = 1;
-$arr = array ('status'=>2,'nombre'=>$nombre, 'empresa' => $empresa, 'email' => $email, 'telefono' => $telefono, 'servicios' => $servicios );
+$arr = array ('status'=>2,'nombre'=>$contenido->name, 'email' => $contenido->email, 'telefono' => $contenido->phone, 'pais' => $contenido->pais, 'ip' =>$ip );
 }
 
-
-die;
 // echo json con respuesta de valores enviados.
 if($ok == 1){
  //guardar en base de datos y enviar correo electronico
@@ -60,19 +53,20 @@ $mail->FromName = 'Soporte landing';
 $mail->addAddress('flb@reddesignsystems.com', 'Maria paula');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
-$mail->addCC('landing@reddesignsystems.com');
-$mail->addBCC('lmedina@reddesignsystems.com');
-$mail->addBCC('flb@reddesignsystems.com');
-$mail->addBCC('javillalee@gmail.com');
+$mail->addCC('soporte@reddesignsystems.com');
+//$mail->addCC('landing@reddesignsystems.com');
+//$mail->addBCC('lmedina@reddesignsystems.com');
+//$mail->addBCC('flb@reddesignsystems.com');
+//$mail->addBCC('javillalee@gmail.com');
 $mail->isHTML(true);                                  // Set email format to HTML
 //
 $message = '<html><body>';
 $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-$message .= "<tr><td><strong>Nombre:</strong> </td><td>$nombre </td></tr>";
-$message .= "<tr><td><strong>Empresa:</strong> </td><td>$empresa</td></tr>";
-$message .= "<tr><td><strong>Email:</strong> </td><td>$email</td></tr>";
-$message .= "<tr><td><strong>Telefono:</strong> </td><td>$telefono </td></tr>";
-$message .= "<tr><td><strong>Servicios:</strong> </td><td>$servicios </td></tr>";
+$message .= "<tr><td><strong>Nombre:</strong> </td><td>$contenido->name </td></tr>";
+//$message .= "<tr><td><strong>Empresa:</strong> </td><td>$empresa</td></tr>";
+$message .= "<tr><td><strong>Email:</strong> </td><td>$contenido->email</td></tr>";
+$message .= "<tr><td><strong>Telefono:</strong> </td><td>$contenido->phone </td></tr>";
+//$message .= "<tr><td><strong>Servicios:</strong> </td><td>$servicios </td></tr>";
 
 $message .= "</table>";
 $message .= "</body></html>";
