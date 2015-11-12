@@ -15,7 +15,7 @@ angular.module('formulario', [])
 			$http(req)
 				.then(function successCallback(response) {					
 					console.log(response);
-					$window.location.href = "http://landing.reddesignsystems.com/thanks.html";
+					$window.location.href = "http://landing.reddesignsystems.com/gracias.html";
  				}, function errorCallback(response) {    				
 					// alert("error al enviar, intente de nuevo.");
   				});
