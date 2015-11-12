@@ -23,14 +23,14 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                   // TCP port to connect to
 $mail->From = 'soporte@reddesignsystems.com';
 $mail->FromName = 'Soporte landing';
-//$mail->addAddress('flb@reddesignsystems.com', 'Maria paula');     // Add a recipient
+$mail->addAddress('flb@reddesignsystems.com', 'Felipe lizcano');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('soporte@reddesignsystems.com');
-//$mail->addCC('landing@reddesignsystems.com');
-//$mail->addBCC('lmedina@reddesignsystems.com');
+$mail->addCC('landing@reddesignsystems.com');
+$mail->addBCC('lmedina@reddesignsystems.com');
 //$mail->addBCC('flb@reddesignsystems.com');
-//$mail->addBCC('javillalee@gmail.com');
+$mail->addBCC('javillalee@gmail.com');
 $mail->isHTML(true);                                  // Set email format to HTML
 //
 $message = '<html><body>';

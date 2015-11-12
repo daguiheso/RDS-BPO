@@ -17,6 +17,7 @@ angular.module('formulario', [])
 			$http(req)
 				.then(function successCallback(response) {					
 					console.log(response);
+					alert('Gracias por la información, lo contactaremos muy pronto');
  				 }, function errorCallback(response) {    				
 					alert("error al enviar, intente de nuevo.");
     				
