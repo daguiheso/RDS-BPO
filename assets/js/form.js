@@ -6,22 +6,8 @@ angular.module('formulario', [])
 	  $scope.email = '';
 	  $scope.phone = ''; 
 	  $scope.pais = ''; 
-      // $scope.text = 'hello';
-	  
-	  
-      $scope.submit = function() {
-        // if ($scope.text) {
-            // $scope.list.push(this.text);
-		    $scope.list.push(this.name);
-		    $scope.list.push(this.email);
-			$scope.list.push(this.phone);
-			$scope.list.push(this.pais);
-			console.log(this.pais);
-            $scope.text = '';
-			// debugger
-			//headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-			//console.log(data);
-			//console.log("Antes de llamar submit");
+      $scope.submit = function() {     
+            $scope.text = '';		
 			var req = {
 				method: 'POST',
 				url: 'http://landing.reddesignsystems.com/action.php',				
@@ -29,15 +15,11 @@ angular.module('formulario', [])
 							
 			}
 			$http(req)
-				.then(function successCallback(response) {
-					//debugger
-	    			// this callback will be called asynchronously
-	    			// when the response is available
+				.then(function successCallback(response) {					
 					console.log(response);
- 				 }, function errorCallback(response) {
-    				// called asynchronously if an error occurs
-					console.log("error al enviar");
-    				// or server returns response with an error status.
+ 				 }, function errorCallback(response) {    				
+					alert("error al enviar, intente de nuevo.");
+    				
   				});
 		  
 		  

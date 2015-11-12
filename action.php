@@ -66,13 +66,14 @@ $message .= "<tr><td><strong>Nombre:</strong> </td><td>$contenido->name </td></t
 //$message .= "<tr><td><strong>Empresa:</strong> </td><td>$empresa</td></tr>";
 $message .= "<tr><td><strong>Email:</strong> </td><td>$contenido->email</td></tr>";
 $message .= "<tr><td><strong>Telefono:</strong> </td><td>$contenido->phone </td></tr>";
-//$message .= "<tr><td><strong>Servicios:</strong> </td><td>$servicios </td></tr>";
+$message .= "<tr><td><strong>Pais:</strong> </td><td>$contenido->pais </td></tr>";
+$message .= "<tr><td><strong>Dirip:</strong> </td><td>$ip </td></tr>";
 
 $message .= "</table>";
 $message .= "</body></html>";
 
 //
-$mail->Subject = 'Landing page test mail';
+$mail->Subject = 'Landing csd bpo';
 $mail->Body    = $message;
 //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
  $mail->send();
